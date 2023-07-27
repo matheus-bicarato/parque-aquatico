@@ -7,6 +7,10 @@
     font-family:'Poppins', sans-serif;
 }
 
+body {
+    background-color: #ffefde;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -14,6 +18,7 @@ header {
     align-items: center;
     background-color: #ff9629;
     color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .header-direita {
@@ -30,12 +35,158 @@ header {
     outline: none;
     border: none;
     padding: 5px;
+    width: 256px;
 }
 
-#pesquisa {
+.pesquisa {
     position: relative;
+    /* background-color: red; */
+    width: fit-content;
 }
 
-#pesquisa button img {
+#pesquisa-button img {
     height: 20px;
+}
+
+#pesquisa-button {
+    border: none;
+    background-color: #ff982900;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+.nav-header {
+    font-size: 13.5px;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.nav-header a {
+    color: black;
+}
+
+.nav-header a:hover {
+    color: rgb(27, 92, 255);
+}
+
+.div-logo {
+    width: 260px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.background-piscina {
+    background: url(assets/imagens/piscinas4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.background-piscina h2 {
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+.menus-imagens {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 25px;
+    padding: 30px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.menus-imagens button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.menus-imagens a {
+    /* background-color: #ff9629; */
+    background-color: #ff9629;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.menus-imagens a:hover {
+    background-color: #ffbd76;
+}
+
+.parte-escrita {
+    padding-left: 100px;
+}
+
+.parte-escrita h1 {
+    color: #ff9629;
+}
+
+.section-imagens {
+    background-color: rgba(45, 45, 45, 0);
+    display: flex;
+    margin: auto;
+    gap: 50px;
+    padding: 25px 25px 0px 25px;
+    width: 90%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    box-sizing: border-box;
+    
+}
+
+.imagens {
+    height: 300px;
+    min-width: 500px;
+}
+
+.icones-social {
+    height: 15px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    gap: 3px;
+}
+
+.redes-sociais a:hover {
+    color: blue;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #ff9629;
+    padding: 15px;
+    font-size: 15px;
+}
+
+main {
+    margin-bottom: 25px;
 }
