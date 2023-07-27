@@ -40,12 +40,14 @@ nav a {
 }
 
 
-footer{
+footer {
     text-align: center;
     background-color: rgb(58, 203, 203);
-    height: 100px;
+    height: 130px;
 }
 
 footer div a {
-    margin: 100px;
+    text-align: center;
+    margin: 20px;
+    margin-top: px;
 }
