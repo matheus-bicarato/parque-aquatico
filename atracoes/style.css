@@ -77,6 +77,7 @@ header {
     display: flex;
     justify-content: center;
 }
+/* termina o header */
 
 .background-piscina {
     background: url(assets/imagens/piscinas4.jpg);
@@ -178,6 +179,7 @@ header {
     color: blue;
 }
 
+/* começa o footer */
 footer {
     display: flex;
     justify-content: space-between;
