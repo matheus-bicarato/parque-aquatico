@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sawarabi+Gothic&display=swap');
+
+:root {
+    --laranja: #ff9629;
+    --azul: rgb(58, 203, 203)
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+}
+body{
+
+    background-image: url(imgs/parque\ 2.jpg);
+    background-size: cover;
+   
+  
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+    background-color: var(--laranja);
+    text-decoration: none;
+}
+section{
+    
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background: darkturquoise;
+    width: 500px;
+    margin-left: 500px;
+    margin-top: 50px;
+   
+}
+section h2{
+    color: #ffff;
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #ffff;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    background-color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+    border: #f5f5f5;
+}
+ 
+button:hover { background-color: #ffffffdf; }

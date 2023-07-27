@@ -1,62 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="#" type="image/x-icon" />
-  <!-- Estilos (Link CSS) -->
-  <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <title>Formulário</title>
 </head>
 <body>
+    <header>
+        <img src="images/logo.png" alt="Logo do Parque Aquático">
+        <h1>Parque Aquático</h1>
+        <!-- Links -->
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="atracoes.html" class="nav1">Atrações</a>
+          <a href="contato.html">Formulário de contato</a>
+        </nav>
+        <!-- Barra de pesquisa -->
+        <div class="pesquisa">
+          <input type="text" placeholder="Pesquisar...">
+          <button type="submit">Pesquisar</button>
+        </div>
+      </header>
+      
+      <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome:</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem:</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
 
-  <!-- ___________________________________________________________________ -->
-  <!-- Cabeçalho -->
-
-  <header>
-    <img src="images/logo.png" alt="Logo do Parque Aquático">
-    <h1>Parque Aquático</h1>
-    <!-- Links -->
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="atracoes.html">Atrações</a>
-      <a href="contato.html">Formulário de contato</a>
-    </nav>
-    <!-- Barra de pesquisa -->
-    <div class="pesquisa">
-      <input type="text" placeholder="Pesquisar...">
-      <button type="submit">Pesquisar</button>
-    </div>
-  </header>
-
-  <!-- ___________________________________________________________________ -->
-  <!-- Sessão contato -->
-
-  <section class="contato">
-    <h2>Contato</h2>
-    <p>Endereço: Rua X, 123, Bairro Y, Cidade, Estado</p>
-    <p>Telefone: (11) 9999-9999</p>
-    <p>E-mail: contato@parqueaquatico.com.br</p>
-    <form action="contact.php" method="post">
-      <input type="text" name="name" placeholder="Nome">
-      <input type="email" name="email" placeholder="E-mail">
-      <input type="message" name="message" placeholder="Mensagem">
-      <input type="submit" value="Enviar">
-    </form>
-  </section>
-
-  <!-- ___________________________________________________________________ -->
-  <!-- Rodapé -->
-
-  <footer>
-    <p>Copyright &copy; 2023 Parque Aquático</p>
-    <div class="redes-sociais">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
-    </div>
-  </footer>
-
+            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+        </form>
+    </section>
 </body>
 </html>
