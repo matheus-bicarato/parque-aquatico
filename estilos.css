@@ -28,7 +28,7 @@
 
 .content h1 {
     position: absolute;
-    left: 16%;
+    left: 19%;
     top: 40%;
     font-size: 40px;
     color: white;
@@ -88,3 +88,17 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
 }
+
+.Ingressos {
+    position: relative;
+}
+.ingressos1 img {
+    width: 100%;
+    z-index: -10000;
+}
+
+.Ingressos svg {
+    position: absolute;
+    bottom: 0;
+}
+
