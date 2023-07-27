@@ -18,6 +18,10 @@ header {
     align-items: center;
     background-color: var(--laranja);
 }
+header img{
+    object-fit: cover;
+
+}
 nav a {
     text-decoration: none;
     color: white;
@@ -38,9 +42,6 @@ nav a {
     z-index: -10000;
 }
 
-.waves {
-   display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+svg {
+    padding-top: 25%;
 }
