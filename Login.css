@@ -213,7 +213,7 @@ li.fb a::before {
 .the-form [class="input"] {
     text-decoration: none  ;
 text-align: center;
-  background: orange;
+  background: rgb(254, 165, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 18px;
   font-size: 20px;
@@ -223,6 +223,7 @@ text-align: center;
   color: rgb(255, 255, 255);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
 
 /* .the-form [class="input"]:hover {
   opacity: .9;
