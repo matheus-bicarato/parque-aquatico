@@ -15,17 +15,82 @@ body{
 
     background-image: url(imgs/parque\ 2.jpg);
     background-size: cover;
-   
-  
+    width: 100%;
     
 }
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    background-color: var(--laranja);
-    text-decoration: none;
+    background-color: #ff9629;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#botao-fechar {
+    display: none;
+}
+
+#hamburguer {
+    display: none;
+}
+
+.header-direita {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#logo-img {
+    height: 90px;
+}
+
+#pesquisar {
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 256px;
+}
+
+.pesquisa {
+    position: relative;
+    /* background-color: red; */
+    width: fit-content;
+}
+
+#pesquisa-button img {
+    height: 20px;
+}
+
+#pesquisa-button {
+    border: none;
+    background-color: #ff982900;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+.nav-header {
+    font-size: 13.5px;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.nav-header a {
+    color: black;
+}
+
+.nav-header a:hover {
+    color: rgb(27, 92, 255);
+}
+
+.div-logo {
+    width: 260px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
 }
 section{
     

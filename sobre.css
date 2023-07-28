@@ -13,23 +13,246 @@
 
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    background-color: var(--laranja);
+    background-color: #ff9629;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-nav a {
-    text-decoration: none;
+
+#botao-fechar {
+    display: none;
+}
+
+#hamburguer {
+    display: none;
+}
+
+.header-direita {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#logo-img {
+    height: 90px;
+}
+
+#pesquisar {
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 256px;
+}
+
+.pesquisa {
+    position: relative;
+    /* background-color: red; */
+    width: fit-content;
+}
+
+#pesquisa-button img {
+    height: 20px;
+}
+
+#pesquisa-button {
+    border: none;
+    background-color: #ff982900;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+.nav-header {
+    font-size: 13.5px;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.nav-header a {
+    color: black;
+}
+
+.nav-header a:hover {
+    color: rgb(27, 92, 255);
+}
+
+.div-logo {
+    width: 260px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+}
+.content img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(70%);
+    z-index: -10000;
+}
+
+.content h1 {
+    position: absolute;
+    left: 19%;
+    top: 40%;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+.content svg {
+    position: absolute;
+    bottom: 0;
+}
+
+.principais {
+    display: flex;
+    background-color: var(--azul);
+}
+.destaques img {
+    width: 600px;
+    margin: 10vh 10vh;
+}
+
+.atracoes {
+    margin-top: 10vh;
+    margin-left: 5vh;
+}
+
+.atracoes h2 {
+    font-size: 45px;
+    font-family:'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: rgba(240, 255, 69, 0.813);
+}
+
+.atracoes p {
+    font-size: 20px;
     color: white;
 }
-.nav1 {
-    margin-left: 20px;
-    margin-right: 20px;
+
+.atracoes button {
+    margin: 30px 27%;
+    padding: 0.8rem 2.4rem;
+    border-radius: 50px;
+    background-color:rgba(240, 255, 69, 0.813);
+    border-style: none;
+    transition: .5s ease;
+    font-size: 1.25rem;
+}
+
+.atracoes a {
+    text-decoration: none;
+    color: rgb(235, 24, 94);
+
+}
+
+.atracoes button:hover {
+    background-color: rgba(122, 132, 14, 0.813);
+    color: rgb(117, 17, 50);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
+}
+
+.ingressos1 img {
+    width: 100%;
+    height: auto;
+ }
+
+.sobre {
+    background-color: rgb(235, 24, 94);
+}
+
+.texto {
+    padding-left: 100px ;
+    padding-bottom: 200px;
+}
+
+.sobre h2 {
+    font-size: 55px;
+    color: #ff9629;
+}
+
+.sobre p {
+    font-size: 20px;
+    color: white;
+}
+
+
+.texto button {
+    margin-top: 30px;
+    margin-left: 200px;
+    padding: 0.8rem 2.4rem;
+    border-radius: 50px;
+    background-color:#ff9629;
+    border-style: none;
+    transition: .5s ease;
+    font-size: 1.25rem;
+}
+
+.texto a {
+    text-decoration: none;
+    color: rgb(235, 24, 94);
+
+}
+
+.texto button:hover {
+    background-color: rgba(122, 132, 14, 0.813);
+    color: rgb(117, 17, 50);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #ff9629;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.icones-social {
+    height: 15px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    gap: 3px;
+}
+
+.redes-sociais a:hover {
+    color: blue;
+}
+
+
+@media screen and (max-width: 990px) {
+    .principais {
+        flex-direction: column;
+    }
 }
 
 /*  */
 /*  */
-
+/*  */
+/*  */
 .container {
     text-align: center;
         
@@ -40,11 +263,7 @@ nav a {
 }
 
 
-footer {
-    text-align: center;
-    background-color: rgb(58, 203, 203);
-    height: 130px;
-}
+
 
 footer div a {
     text-align: center;
@@ -52,18 +271,15 @@ footer div a {
     margin-top: px;
 }
 
-header img {
-    width: 250px;
-}
 
 body{
     background-image: url(fundo2.jpg);
     background-size: cover;
-        
+    
 }
 
 .imga {
- background-size: cover;
+    background-size: cover;
 } 
 
 @media (max-width: 992px) {
