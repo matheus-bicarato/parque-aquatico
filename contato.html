@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="stylesheet" href="contato.css">
     <title>Formulário</title>
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Logo do Parque Aquático">
-        <h1>Parque Aquático</h1>
-        <!-- Links -->
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="atracoes.html" class="nav1">Atrações</a>
-          <a href="contato.html">Formulário de contato</a>
-        </nav>
-        <!-- Barra de pesquisa -->
-        <div class="pesquisa">
-          <input type="text" placeholder="Pesquisar...">
-          <button type="submit">Pesquisar</button>
-        </div>
-      </header>
-      
+  <header>
+    <div class="div-logo">
+      <a href="#"><img src="assets/logo.png" alt="Logo do Parque Aquático" id="logo-img"></a>
+    </div>
+    <h1>Parque Aquático</h1>
+    <!-- Links -->
+
+    <div class="div-hamburguer">
+      <button id="hamburguer"><img src="assets/hamburguer.png" alt=""></button>
+    </div>
+
+    <div class="header-direita" id="menu">
+      <button id="botao-fechar"><img src="assets/fechar.png" alt=""></button>
+
+      <nav class="nav-header">
+        <a href="index.html">Home</a>
+        <a href="atracoes.html">Atrações</a>
+        <a href="contato.html">Formulário de contato</a>
+      </nav>
+      <!-- Barra de pesquisa -->
+      <div class="pesquisa">
+        <input type="text" placeholder="Pesquisar..."  id="pesquisar">
+        <button type="submit" id="pesquisa-button"><img src="assets/lupa.png" alt="lupa"></button>
+      </div>
+    </div>
+  </header>
+  <script src="hamburguer.js"></script>
+  
       <section>
         <h2>Contato</h2>
         <form action="https://api.staticforms.xyz/submit" method="post">
