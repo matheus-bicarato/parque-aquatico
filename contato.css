@@ -93,20 +93,22 @@ header {
     justify-content: center;
 }
 section{
-    align-items: flex-end;
+    position: absolute;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
     background: darkturquoise;
     width: 500px;
-    margin-left: 500px;
-    margin-top: 50px;
-   
+    height: 500px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 section h2{
     color: #ffff;
     font-size: 2.5rem;
-    margin: 2rem;
+    margin: 10px;
     text-align: center;
 }
 section form{
