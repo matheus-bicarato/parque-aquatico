@@ -11,7 +11,80 @@
     font-family:'Poppins', sans-serif;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff9629;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
+#botao-fechar {
+    display: none;
+}
+
+#hamburguer {
+    display: none;
+}
+
+.header-direita {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#logo-img {
+    height: 90px;
+}
+
+#pesquisar {
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 256px;
+}
+
+.pesquisa {
+    position: relative;
+    /* background-color: red; */
+    width: fit-content;
+}
+
+#pesquisa-button img {
+    height: 20px;
+}
+
+#pesquisa-button {
+    border: none;
+    background-color: #ff982900;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+.nav-header {
+    font-size: 13.5px;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.nav-header a {
+    color: black;
+}
+
+.nav-header a:hover {
+    color: rgb(27, 92, 255);
+}
+
+.div-logo {
+    width: 260px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
 
 .content {
     position: relative;
@@ -89,16 +162,89 @@
     box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
 }
 
-.Ingressos {
-    position: relative;
-}
 .ingressos1 img {
     width: 100%;
-    z-index: -10000;
+    height: auto;
+ }
+
+.sobre {
+    background-color: rgb(235, 24, 94);
 }
 
-.Ingressos svg {
-    position: absolute;
-    bottom: 0;
+.texto {
+    padding-left: 100px ;
+    padding-bottom: 200px;
 }
 
+.sobre h2 {
+    font-size: 55px;
+    color: #ff9629;
+}
+
+.sobre p {
+    font-size: 20px;
+    color: white;
+}
+
+
+.texto button {
+    margin-top: 30px;
+    margin-left: 200px;
+    padding: 0.8rem 2.4rem;
+    border-radius: 50px;
+    background-color:#ff9629;
+    border-style: none;
+    transition: .5s ease;
+    font-size: 1.25rem;
+}
+
+.texto a {
+    text-decoration: none;
+    color: rgb(235, 24, 94);
+
+}
+
+.texto button:hover {
+    background-color: rgba(122, 132, 14, 0.813);
+    color: rgb(117, 17, 50);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #ff9629;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.icones-social {
+    height: 15px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    gap: 3px;
+}
+
+.redes-sociais a:hover {
+    color: blue;
+}
+
+
+@media screen and (max-width: 990px) {
+    .principais {
+        flex-direction: column;
+    }
+}
