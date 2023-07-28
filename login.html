@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wepets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="form-container">
+            
+            <div class="logo">
+                <!-- <a href="index.html"> -->
+                </a>
+            <div class="form-body">
+                <h2 class="title">Logar com</h2>
+                <div class="social-login">
+                    <ul>
+                       
+                        <li class="google"><a href="facebook.com">Google</a></li>               
+                        <li class="fb"><a href="google.com">Facebook</a></li>
+                    </ul>
+                </div><!-- SOCIAL LOGIN -->
+
+                <div class="_or">ou</div>
+
+                <form action="" class="the-form" id="myForm">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Insira o seu email:" required>
+
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" minlength="8" placeholder="Insira sua senha:" required>
+
+                    <!-- <a class="input" href="index.html" aria-required="true">Entrar</a> -->
+                    <input class="input" type="submit">
+
+                </form>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                     document.getElementById("myForm").addEventListener("submit", function(event) {
+                      event.preventDefault(); // Impede o envio padrão do formulário
+                      window.location.href = "index.html"; //Redireciona para a página
+                     });
+                     });
+                </script>
+
+            </div><!-- FORM BODY-->
+
+            <div class="form-footer">
+                <!-- <div>
+                    <span>Não tem uma conta?</span> <a href="Cadastre-se.html">Cadastre-se</a>
+                </div> -->
+            </div><!-- FORM FOOTER -->
+
+        </div><!-- FORM CONTAINER -->
+    </div>
+
+</body>
+</html>
