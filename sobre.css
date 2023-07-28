@@ -64,4 +64,8 @@ body{
 
 .imga {
  background-size: cover;
+} 
+
+@media (max-width: 992px) {
+    
 }
