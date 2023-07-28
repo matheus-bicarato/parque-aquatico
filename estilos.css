@@ -88,6 +88,10 @@ header {
 
 .content {
     position: relative;
+    background: url(assets/imagem-fundo.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 .content img {
     width: 100%;
@@ -246,5 +250,83 @@ footer {
 @media screen and (max-width: 990px) {
     .principais {
         flex-direction: column;
+    }
+    #botao-fechar {
+        display: block;
+    }
+    
+    #hamburguer {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 15px;
+    }
+
+    #logo-img { 
+        height: 60px;
+    }
+
+    .div-logo {
+        width: 73.73px;
+    }
+
+    .div-hamburguer {
+        width: 73px;
+    }
+
+    #hamburguer {
+        height: 25px;
+        width: 25px;
+        background: none;
+        border: none;
+    }
+
+    #hamburguer img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .desativado {
+        display: none;
+    }
+
+    .hamburguer-on {
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        background-color: #ffa545;
+        padding: 30px 15px 15px 15px;
+        border-radius: 7px;
+        top: 0;
+        gap: 10px;
+    }
+
+    .header-direita {
+        display: none;
+        flex-direction: column-reverse;
+    }
+
+    #pesquisar {
+        width: 150px;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #botao-fechar {
+        height: 25px;
+        width: 25px;
+        background: none;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #botao-fechar img {
+        height: 25px;
     }
 }
