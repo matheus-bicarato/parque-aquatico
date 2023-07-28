@@ -9,26 +9,37 @@
     <title>Parque aquatico - Sobre a empresa</title>
 </head>
 <body>
-  <ig class"imgao" src="assets/pexels-tom-fisk-1291448.jpg" alt="">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
       </style>
     <!-- Header-->
     <header>
-        <img src="assets/logo.png" alt="Logo do Parque Aquático">
-        <h1>Parque Aquático</h1>
-        <!-- Links -->
-        <nav>
+      <div class="div-logo">
+        <a href="#"><img src="assets/logo.png" alt="Logo do Parque Aquático" id="logo-img"></a>
+      </div>
+      <h1>Parque Aquático</h1>
+      <!-- Links -->
+  
+      <div class="div-hamburguer">
+        <button id="hamburguer"><img src="assets/hamburguer.png" alt=""></button>
+      </div>
+  
+      <div class="header-direita" id="menu">
+        <button id="botao-fechar"><img src="assets/fechar.png" alt=""></button>
+  
+        <nav class="nav-header">
           <a href="index.html">Home</a>
           <a href="atracoes.html">Atrações</a>
           <a href="contato.html">Formulário de contato</a>
+          <a href="Sobre.html">Sobre a empresa</a>
         </nav>
         <!-- Barra de pesquisa -->
         <div class="pesquisa">
-          <input type="text" placeholder="Pesquisar...">
-          <button type="submit">Pesquisar</button>
+          <input type="text" placeholder="Pesquisar..."  id="pesquisar">
+          <button type="submit" id="pesquisa-button"><img src="assets/lupa.png" alt="lupa"></button>
         </div>
-      </header>
+      </div>
+    </header>
      
     <br><br><br>
     <div class="container">
@@ -77,18 +88,13 @@
     <br><br><br><br>
 
  
-    <footer class="footeer">
-        <div class="texto">
-          <p>Copyright &copy; 2023 Parque Aquático</p>
-        
-          <p>Nossas redes-sociais</p>
-        </div>
-        <br>
-        <div class="redes-sociais">
-          <a href="https://pt-br.facebook.com/login/device-based/regular/login/"> <img src="assets/facebook.png" alt=""></a>
-          <a href="https://twitter.com/login?lang=pt"> <img src="assets/twitter.png" alt=""></a>
-          <a href="https://www.instagram.com/"> <img src="assets/instagram.png" alt=""></a>
-        </div>
-      </footer>
+    <footer>
+      <p>Copyright &copy; 2023 Parque Aquático</p>
+      <nav class="redes-sociais">
+        <a href="#"><img src="assets/facebook.png" alt="" class="icones-social">Facebook</a>
+        <a href="#"><img src="assets/twitter.png" alt="" class="icones-social">Twitter</a>
+        <a href="#"><img src="assets/instagram.png" alt="" class="icones-social">Instagram</a>
+      </nav>
+    </footer>
 </body>
 </html>
